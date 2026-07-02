@@ -71,7 +71,9 @@ Output written to: test-imposed.pdf
 
 
 ============================================================
+
 PRINTING INSTRUCTIONS
+
 ============================================================
 
 PRINTER SETTINGS:
