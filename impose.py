@@ -188,9 +188,9 @@ def print_summary(input_file, total_pages, padded_total,
 
     print("\n" + "=" * 50)
     print(f"Input file:        {input_file}")
-    print(f"Total pages:       {total_pages}")
-    print(f"Final pages:       {padded_total}")
+    print(f"Document pages:       {total_pages}")
     print(f"Blank pages:       {blank_count}")
+    print(f"Final pages:       {padded_total}")
     print(f"Signature size:    {signature_size}")
     print(f"Signatures:        {len(signatures)}")
     print("\nBreakdown:\n")
