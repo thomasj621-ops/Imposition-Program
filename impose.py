@@ -137,7 +137,7 @@ def choose_signature_size(total_pages):
 
     print("\nSignature setup:\n")
 
-    max_size = prompt_int("Maximum pages per signature", default=32)
+    max_size = 32
 
     if total_pages <= max_size:
         use_single = prompt_yes_no(
@@ -699,10 +699,7 @@ def main():
 
     printinstructions()
 
-    # .strip().lower() handles whitespace and mixed case
-    choice = input("Would you like to render a preview of your pamphlet? [Y/n]: ").strip().lower()
-    
-    # If choice is empty (user hit Enter) or starts with 'y'
+    choice = input("Would you like to render a preview of your pamphlet? [Y/n]: ").strip().lower()    
     if choice == '' or choice.startswith('y'):
         main_with_preview(input_file, config)
     elif choice.startswith('n'):
